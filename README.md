@@ -18,17 +18,17 @@ View your app in AI Studio: https://ai.studio/apps/fa47e94c-6f78-4804-afff-4b9cf
 2. Run the app:
    `npm run dev`
 
-## Deploy to Netlify
+## Deploy to Vercel
 
-The repository includes [netlify.toml](./netlify.toml), which configures Netlify to run
+The repository includes [vercel.json](./vercel.json), which configures Vercel to run
 `npm run build` and publish the generated `dist` directory.
 
 To deploy from GitHub:
 
-1. In Netlify, choose **Add new project** > **Import an existing project**.
+1. In Vercel, choose **Add New Project**.
 2. Select `nalluri-sys/kauisk`.
-3. Keep the detected build settings and deploy.
+3. Keep the configured Vite build settings and deploy.
 
 If the app is later updated to use Gemini API calls in the browser, add
-`GEMINI_API_KEY` under the Netlify project's environment variables. Do not commit
+`GEMINI_API_KEY` under the Vercel project's environment variables. Do not commit
 `.env` files or API keys.
